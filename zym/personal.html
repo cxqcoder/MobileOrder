@@ -1,0 +1,24 @@
+<div ng-include="'zym/include/header.html'"></div>
+<div class="container">
+	<h2 class="text-center">我的订单</h2>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<td>编号</td>
+				<td>菜品</td>
+				<td>下单时间</td>
+				<td>联系人</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="myorder in myOrders">
+				<td>{{myorder.oid}}</td>
+				<td><img ng-src="img/{{myorder.img_sm}}" class="img-responsive"></td>
+				<td>{{myorder.order_time|date:'yyyy-MM-dd hh:mm'}}</td>
+				<td>{{myorder.user_name}}</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+<div ng-include="'zym/include/footer.html'"></div>

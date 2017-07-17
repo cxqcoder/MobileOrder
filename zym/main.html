@@ -1,0 +1,27 @@
+<div ng-include="'zym/include/header.html'"></div>
+<div class="container">
+    <div class="form-group has-feedback">
+        <input class="form-control" type="text" ng-model="kw" placeholder="搜索菜品名称和原料"/>
+        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item media" ng-repeat="obj in menulsit">
+          <a href='#/detail/{{obj.did}}'>
+          	  <div class="media-left media-middle">
+                <img ng-src="img/{{obj.img_sm}}" alt="" class="media-object"/>
+            </div>
+            <div class="media-body">
+                <h4>{{obj.name}}</h4>
+                <p>主要食料：{{obj.material}}</p>
+                 <hr />
+                <p class="text-danger">{{obj.price|currency:'￥'}}</p>
+            </div>
+          </a>
+        </li>
+       
+    </ul>
+<button class="btn btn-success" style="width: 100%;" ng-click="loadmore()" ng-show="hasmore">加载更多</button>
+<p class="alert-warning text-center"  ng-hide="hasmore"><span class="glyphicon glyphicon-alert"></span>没有更多了</p>
+</div>
+<div ng-include="'zym/include/footer.html'"></div>

@@ -1,0 +1,176 @@
+body {
+	margin: 80px 0 100px 0;
+	color: #333;
+	background: #F2F1EC;
+}
+ul{
+	margin-bottom: 0;
+}
+a{
+	color: #333;
+}
+.start{
+	overflow: hidden;
+}
+.start img{
+	display: none;
+}
+.start .now{
+	display: block;
+}
+.container>.navbar-header{
+	margin-left: 0;
+	margin-right: 0;
+}
+.navbar-header>a>img{
+	margin: 0 auto;
+	margin-left: 45%;
+}
+.icon1{
+	position: absolute;
+	left: 10px;
+	top: 13px;
+}
+.add{
+	position: absolute;
+	right: 10px;
+	top: 13px;
+}
+.tximg{
+	margin: 10px auto;
+	border: 2px solid green;
+	border-radius: 50%;
+}
+.cd ul{
+	margin-top: 30px;
+	padding-left: 10px;
+}
+.cd ul li{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #8C8C8C;
+}
+.cd span{
+	margin-right: 20px;
+}
+.cd a{
+	font-size: 24px;
+	color: #383735;
+}
+.btns li {
+	display: inline-block;
+	width: 32%;
+	line-height: 60px;
+	text-align: center;
+}
+
+.btns li:hover {
+	background: #CCCCCC;
+}
+
+.media a {
+	text-decoration: none;
+	color: #333;
+}
+
+.media a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+table tr td {
+	vertical-align: middle;
+}
+
+.page {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: 80px;
+}
+
+.page.ng-leave,
+.page.ng-enter {
+	transition:0.5s;
+}
+
+.page.ng-leave {
+	left: 0;
+	opacity: 1;
+}
+
+.page.ng-leave.ng-leave-active {
+	left: 100%;
+	opacity: 0;
+}
+
+.page.ng-enter {
+	left: -100%;
+	opacity: 0;
+}
+
+.page.ng-enter.ng-enter-active {
+	left: 0;
+	opacity: 1;
+}
+.breadcrumb{
+	margin-bottom:0 ;
+}
+.page-header{
+	margin: 0;
+}
+.im1{
+	margin: 0 auto;
+}
+.glyphicon{
+	font-size: 24px;
+}
+.indo{
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: right;
+}
+.indo span{
+	position: absolute;
+	left: 10px;
+	top: 20px;
+}
+.indo h1{
+	font-size: 24px;
+}
+.indo+table{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.indo+table>tbody tr{
+	background: white;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.indo+table>tbody tr input{
+	border-style: none;
+	outline: none;
+}
+.table-striped>thead>tr>td{
+		padding: 0;
+		text-align: center;
+		font-weight: bold;
+	}
+.table-striped>tbody>tr>td{
+	padding: 0;
+		text-align: center;
+		vertical-align: middle;
+	}
+@media (min-width: 320px) and (max-width:400px) {
+	.table-striped{
+		font-size: 10px;
+		
+	}
+	
+}

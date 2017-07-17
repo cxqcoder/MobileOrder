@@ -1,0 +1,25 @@
+<div ng-include="'zym/include/header.html'"></div>
+<div class="container">
+	<ul class="breadcrumb">
+		<li><a href="#/main">首页</a></li>
+		<li>详情</li>
+	</ul>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="page-header">
+				<h2>{{food.name}}</h2>
+				<hr />
+				<img class="img-responsive im1" src="img/{{food.img_lg}}" />
+			</div>
+			<p style="color: black;font-weight: bold;">主要原料：{{food.material}}</p>
+			<p>{{food.detail}}</p>
+			<hr />
+			<p class="text-danger">{{food.price|currency:'￥'}}</p>
+		</div>
+		<div class="panel-footer text-right">
+			<button type="button" ng-click="jump('/order/'+foodid)" class="btn btn-success">我要订餐</button>
+			<button type="button" ng-click="jump('/main')" class="btn btn-warning">我再看看</button>
+		</div>
+	</div>
+</div>
+<div ng-include="'zym/include/footer.html'"></div>

@@ -1,0 +1,34 @@
+<div ng-include="'zym/include/header.html'"></div>
+<div class="container">
+	<div class="alert alert-warning">
+		<p ng-show="msgBox">{{msgBox}}</p>
+	<p ng-show="errBox">{{errBox}}</p>
+	<form ng-hide=" msgBox || errBox">
+		<div class="form-group">
+			<label for="uname">姓名</label>
+			<input type="text" id="uname" class="form-control" ng-model="orderList.user_name"/>
+			<label id="err1"></label>
+		</div>
+		<div class="form-group">
+			<label>性别</label><br />
+			<div class="radio-inline"><input type="radio" id="male" name="sex" value="1" ng-model="orderList.sex"/><label for="male">男士</label></div>
+			<div class="radio-inline"><input type="radio" id="female" name="sex" value="2" ng-model="orderList.sex"/><label for="female">女士</label></div>
+			
+			
+		</div>
+		
+		<div class="form-group">
+			<label for="uname">联系电话</label>
+			<input type="tel" id="telphone" class="form-control" ng-model="orderList.phone"/>
+			<label id="err2"></label>
+		</div>
+		<div class="form-group">
+			<label for="uname">送餐地址</label>
+			<textarea id="addr" rows="10" cols="12" class="form-control" ng-model="orderList.addr"></textarea>
+		</div>
+		<button class="btn btn-success" style="width: 100%;" ng-click="submitOrder()">确定下单</button>
+	</form>
+	</div>
+	
+</div>
+<div ng-include="'zym/include/footer.html'"></div>
